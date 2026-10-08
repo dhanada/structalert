@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StructAlert — Crowdsourced Building Condition Intelligence | DKM Consult Limited</title>
+  <meta name="description" content="StructAlert turns crowdsourced photographs of buildings and structures into AI condition scores, predicts likely failure, and alerts the right people to repair before it breaks. By DKM Consult Limited, Hong Kong.">
+  <meta property="og:title" content="StructAlert — Every phone a sensor. Every building watched.">
+  <meta property="og:description" content="Crowdsourced building images → AI condition scores → failure prediction → smart alerts. Repair before it breaks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://structalert.consultdkm.in/">
+  <meta name="theme-color" content="#00529F">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2300529F'/%3E%3Cpath d='M7 24V14l4-6h4l2 3h4l2-3h2l-2 4 5 12h-5l-2-5h-6l-2 5H7z' fill='%23EB9419'/%3E%3Crect x='14' y='19' width='4' height='3' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/img/dkm-logo.png" alt="DKM logo" width="40" height="40">
+        <span class="brand-text">
+          <span class="brand-co">DKM Consult Limited</span>
+          <span class="brand-name">StructAlert</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#why">Why StructAlert</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="mailto:hello@consultdkm.in?subject=StructAlert%20early%20access">Get early access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="badge"><span class="badge-dot" aria-hidden="true"></span>Crowdsourced structural intelligence · Hong Kong</span>
+          <h1>Every phone a sensor.<br><span class="grad">Every building watched.</span></h1>
+          <p class="lede">StructAlert turns crowdsourced photographs of buildings and structures into
+            AI condition scores, predicts likely failure — and alerts the right people
+            to repair <em>before it breaks</em>.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:hello@consultdkm.in?subject=StructAlert%20early%20access">Get early access</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <p class="hero-credit">By <strong>DKM Consult Limited</strong> · Hong Kong — in partnership with
+            <a href="https://raspect.ai" rel="noopener" target="_blank">RaSpect</a></p>
+        </div>
+
+        <!-- Condition-report mock -->
+        <aside class="report-card reveal" aria-label="Demo building condition report">
+          <div class="report-head">
+            <span class="report-title">Building condition report</span>
+            <span class="report-chip chip-demo">Demo score</span>
+          </div>
+          <div class="report-photo" role="img" aria-label="Illustration of a photographed building façade with defect markers">
+            <svg viewBox="0 0 320 160" aria-hidden="true" focusable="false">
+              <rect x="0" y="0" width="320" height="160" fill="url(#sky)"/>
+              <rect x="24" y="34" width="272" height="126" fill="#c8cdd4"/>
+              <g fill="#9aa2ad">
+                <rect x="24" y="34" width="272" height="10"/>
+                <rect x="24" y="130" width="272" height="30"/>
+              </g>
+              <g fill="#e8eaee">
+                <rect x="40" y="58" width="34" height="26" rx="2"/><rect x="86" y="58" width="34" height="26" rx="2"/><rect x="132" y="58" width="34" height="26" rx="2"/><rect x="178" y="58" width="34" height="26" rx="2"/><rect x="224" y="58" width="34" height="26" rx="2"/>
+                <rect x="40" y="94" width="34" height="26" rx="2"/><rect x="86" y="94" width="34" height="26" rx="2"/><rect x="132" y="94" width="34" height="26" rx="2"/><rect x="178" y="94" width="34" height="26" rx="2"/><rect x="224" y="94" width="34" height="26" rx="2"/>
+              </g>
+              <path d="M118 48 l6 9 l-2 5 l-8 -6 z" fill="#231F20"/>
+              <path d="M120 50 l4 6 l-1 3 l-5 -4 z" fill="#EB9419"/>
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#dbe7f2"/><stop offset="1" stop-color="#eef3f8"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="pin pin-a" aria-hidden="true"></span>
+            <span class="pin pin-b" aria-hidden="true"></span>
+          </div>
+          <div class="report-body">
+            <div class="score-row">
+              <svg class="score-ring" viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="27" fill="none" stroke="#e3e7ec" stroke-width="7"/>
+                <circle cx="32" cy="32" r="27" fill="none" stroke="#EB9419" stroke-width="7"
+                        stroke-linecap="round" stroke-dasharray="132.6 169.6" transform="rotate(-90 32 32)"/>
+                <text x="32" y="36" text-anchor="middle" font-size="19" font-weight="800" fill="#231F20">78</text>
+              </svg>
+              <div>
+                <div class="score-label">Condition score <span class="chip chip-grade">C · Fair</span></div>
+                <div class="score-meta">Façade · geotagged · verified 12 min ago</div>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Spalling</span><span class="tag">Hairline crack</span><span class="tag">Efflorescence</span>
+            </div>
+            <div class="risk-row">
+              <span class="risk-icon" aria-hidden="true"></span>
+              <p><strong>Failure risk:</strong> elevated before next typhoon season.<br>
+                <strong>Action:</strong> local façade patch + waterproofing — alert sent to owner &amp; engineer.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" aria-label="Key advantages">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-num">01</span><p>No sensors, no hardware — just the cameras people already carry</p></div>
+        <div class="stat reveal"><span class="stat-num">02</span><p>Condition score in minutes, not months of inspection backlog</p></div>
+        <div class="stat reveal"><span class="stat-num">03</span><p>Alerted before it breaks — not summoned after the collapse</p></div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="section-title reveal">How StructAlert works</h2>
+        <p class="section-sub reveal">Four steps between a photograph and a prevented failure.</p>
+        <ol class="steps-grid">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <h3>Snap &amp; upload</h3>
+            <p>Anyone photographs a crack, spall, or leaning structure. Photos arrive geotagged and timestamped from the crowd.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">2</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19a9 9 0 1 1 14 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 19l3.5-5h-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 14H5.7M18.3 14h-2.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>AI condition score</h3>
+            <p>Computer vision identifies defects and scores the structure 0–100 against inspection benchmarks.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">3</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20l6-7 4 4 7-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 8h3v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Failure prediction</h3>
+            <p>Deterioration trajectories, typhoon seasons, and loading context estimate when — not if — it fails.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">4</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 21a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Smart alerts</h3>
+            <p>Owners, engineers, and authorities receive prioritized alerts with recommended actions — before failure.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section why" id="why">
+      <div class="container">
+        <h2 class="section-title reveal">Why now</h2>
+        <p class="section-sub reveal">Three pressures that make waiting for the next scheduled inspection too slow.</p>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <h3>Ageing stock, finite inspectors</h3>
+            <p>A city's buildings age faster than surveyors can cover them. Crowdsourcing turns every resident's phone into a survey instrument.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Typhoon season sharpens the stakes</h3>
+            <p>Each storm stresses façades, glazing, and cantilevers. StructAlert keeps watch between inspections — and right after them.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Repair before it breaks</h3>
+            <p>Early intervention costs a fraction of emergency repair — and averts injury, closure, and loss.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <h2 class="section-title">About DKM Consult Limited</h2>
+          <p><strong>DKM Consult Limited</strong> builds artificial-intelligence building façade
+            inspection and monitoring systems. StructAlert is our crowdsourced early-warning
+            network for the built environment — condition intelligence supplied by the people
+            who live and work around it.</p>
+          <dl class="entity">
+            <div><dt>Business Registration No.</dt><dd>149460186 (Hong Kong)</dd></div>
+            <div><dt>Registered office</dt><dd>Flat E, 12/F, Tower 12, Providence Peak,<br>8 Fo Chun Road, Pak Shek Kok, NT, Hong Kong</dd></div>
+            <div><dt>Founder &amp; MD</dt><dd>Dr Dhanada Kanta Mishra</dd></div>
+            <div><dt>Incorporated</dt><dd>5 February 2026</dd></div>
+          </dl>
+        </div>
+        <aside class="partner-card reveal">
+          <span class="partner-label">Technology partner</span>
+          <h3>RaSpect</h3>
+          <p>StructAlert's scoring engine builds on <a href="https://www.raspect.ai/product/inspectica-saas.html" rel="noopener" target="_blank">Inspectica™</a>
+            — RaSpect's computer-vision façade intelligence, deployed across Hong Kong and beyond.</p>
+          <a class="btn btn-outline" href="https://raspect.ai" rel="noopener" target="_blank">Visit raspect.ai</a>
+          <p class="partner-note">DKM group sites: <a href="https://consultdkm.co.in/" rel="noopener" target="_blank">consultdkm.co.in</a> (India)</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / EARLY ACCESS ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <h2>Be among the first buildings watched</h2>
+          <p>Early-access invitations are rolling out to building owners, engineers, and owners'
+            committees in Hong Kong first.</p>
+          <div class="cta-row cta-center">
+            <a class="btn btn-amber" href="mailto:hello@consultdkm.in?subject=StructAlert%20early%20access">hello@consultdkm.in</a>
+          </div>
+          <p class="cta-fine">Tell us your building, your role, and one structure you worry about. We'll reply within two working days.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand"><img src="assets/img/dkm-logo.png" alt="" width="28" height="28"> DKM Consult Limited · StructAlert</p>
+        <p>Artificial Intelligence Building Facade Inspection and Monitoring.<br>
+          Crowdsourced condition intelligence for safer cities.</p>
+      </div>
+      <div>
+        <p class="footer-head">Contact</p>
+        <p><a href="mailto:hello@consultdkm.in">hello@consultdkm.in</a><br>
+          Flat E, 12/F, Tower 12, Providence Peak,<br>
+          8 Fo Chun Road, Pak Shek Kok, NT, Hong Kong</p>
+      </div>
+      <div>
+        <p class="footer-head">Links</p>
+        <p><a href="https://consultdkm.co.in/" rel="noopener" target="_blank">DKM India — consultdkm.co.in</a><br>
+          <a href="https://raspect.ai" rel="noopener" target="_blank">RaSpect — raspect.ai</a></p>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>Business Registration No. 149460186 · © <span id="year">2026</span> DKM Consult Limited. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
