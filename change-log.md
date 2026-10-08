@@ -18,6 +18,33 @@ logged in the consulting-sales repo
 
 ## Entries
 
+### 2026-10-08 — Custom domain + email DNS live (structalert.consultdkm.in, Zoho MX/SPF)
+
+- **What:**  https://structalert.consultdkm.in/ live: GoDaddy CNAME
+  `structalert` → `dhanada.github.io` added via GoDaddy API (PAT), custom
+  domain set on GitHub Pages (CNAME file committed by GitHub in `2ab4348`),
+  Let's Encrypt cert issued, HTTPS enforced (http → 301 https;
+  dhanada.github.io → 301 custom domain). Zoho Mail DNS pre-staged on
+  `consultdkm.in`: MX `mx.zoho.com` (10) + `mx2.zoho.com` (20), SPF
+  `v=spf1 include:zoho.com ~all` — resolving. Remaining Zoho steps tracked
+  in `docs/domain-email-setup.md` (verification TXT + DKIM values from the
+  Zoho console; mailboxes `dhanada@`/`hello@`). Existing DMARC p=reject
+  noted — DKIM must be added before real mail.
+- **When:**  2026-10-08
+- **Where:** GoDaddy DNS (API); GitHub Pages config; `CNAME`,
+  `docs/domain-email-setup.md`, `change-log.md` (this entry)
+- **How:**   GoDaddy API PUTs (CNAME/MX/TXT) with the user-issued PAT;
+  `gh api` PUT pages (cname + https_enforced — `-F` for the boolean);
+  verified via nslookup + curl (200 on custom domain, cert CN/issuer/dates,
+  301 http→https, MX/SPF answers; Windows DNS cache flush needed once for
+  the pre-propagation NXDOMAIN). `Ref` is the pre-amend commit hash, kept
+  resolvable via local tag `structalert-ref-domain`.
+- **Why:**   Claude Startups application needs the live site + working
+  company email on the same domain; Dhanada issued the GoDaddy PAT so the
+  agent could automate the records.
+- **Who:**   AIOS (agent), on instruction from Dhanada
+- **Ref:**   (filled after first commit)
+
 ### 2026-10-08 — StructAlert landing site v1.0 (GitHub Pages)
 
 - **What:**  Single-page StructAlert landing site for DKM Consult Limited
